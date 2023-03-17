@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
         });
       });
     }
-  });
+  }, []);
 
   const [state, dispatch] = useReducer(reducers, initialState);
   return (
